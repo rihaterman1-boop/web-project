@@ -14,3 +14,5 @@ h2 { margin-top: 0; color: #0969da; }
 .site-footer { background: #0d1117; color: #8b949e; padding: 20px 0; text-align: center; }
 pre { background: #0d1117; color: #e6edf3; padding: 14px 16px; border-radius: 8px; overflow-x: auto; }
 code { font-family: Consolas, monospace; }
+nav a.active { color: #fff; border-bottom: 2px solid #f78166; }
+main section a { color: #0969da; }
