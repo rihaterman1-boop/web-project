@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Команды Git — GitStart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Git<span>Start</span></a>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="commands.html">Команды</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Основные команды Git</h1>
+    <p>Подборка команд, которые нужны в каждой лабораторной работе.</p>
+
+    <section>
+      <h2>Первый коммит</h2>
+      <pre><code>git init -b main
+git add .
+git commit -m "Создана начальная версия сайта"</code></pre>
+      <p>Создаём репозиторий, добавляем файлы в индекс и сохраняем первую версию.</p>
+    </section>
+
+    <section>
+      <h2>Работа с ветками</h2>
+      <pre><code>git switch -c feature/new-page
+git branch
+git push -u origin feature/new-page</code></pre>
+      <p>Новая ветка позволяет менять проект, не затрагивая рабочую версию в <code>main</code>.</p>
+    </section>
+
+    <section>
+      <h2>Просмотр истории</h2>
+      <pre><code>git status
+git log --oneline --graph --all
+git diff</code></pre>
+      <p>Помогают понять, что изменилось и когда.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 GitStart. Учебный проект.</div>
+  </footer>
+</body>
+</html>
