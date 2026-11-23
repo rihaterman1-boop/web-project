@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; line-height: 1.6; color: #1f2933; background: #f6f8fa; }
-.container { width: 960px; margin: 0 auto; }
+.container { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 16px; }
 .site-header { background: #0d1117; padding: 14px 0; }
 .site-header .container { display: flex; justify-content: space-between; align-items: center; }
 .logo { color: #fff; font-size: 24px; font-weight: 700; text-decoration: none; }
@@ -16,3 +16,16 @@ pre { background: #0d1117; color: #e6edf3; padding: 14px 16px; border-radius: 8p
 code { font-family: Consolas, monospace; }
 nav a.active { color: #fff; border-bottom: 2px solid #f78166; }
 main section a { color: #0969da; }
+img { max-width: 100%; height: auto; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 768px) {
+  .hero { padding: 44px 0; }
+  .hero h1 { font-size: 30px; }
+  .cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 24px; }
+  .cards { grid-template-columns: 1fr; }
+  main section { padding: 16px; }
+}
